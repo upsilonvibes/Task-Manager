@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Gestor de Tareas</h1>
+            <p class="philosophy">"Paso a paso se llega lejos."</p>
+        </header>
+
+        <section class="input-container">
+            <input type="text" id="taskInput" placeholder="Add a new task..." maxlength="50">
+            <button id="addBtn">Add Task</button>
+        </section>
+
+        <nav class="filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="active">Pending</button>
+            <button class="filter-btn" data-filter="completed">Completed</button>
+        </nav>
+
+        <main>
+            <ul id="taskList">
+                </ul>
+        </main>
+
+        <footer>
+            <button id="clearCompleted">Clear Completed</button>
+            <p> &copy; April 2026 | Task Manager | All rights reserved </p>
+        </footer>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

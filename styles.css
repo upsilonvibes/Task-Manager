@@ -1,0 +1,132 @@
+:root {
+    --primary: #4a90e2;
+    --bg: #78e6c1;
+    --text: #333;
+    --danger: #e74c3c;
+    --success: #2ecc71;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg);
+    color: var(--text);
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.container {
+    background: white;
+    width: 90%;
+    max-width: 400px;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.philosophy {
+    font-style: italic;
+    font-size: 0.9rem;
+    color: #666;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.input-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    outline: none;
+}
+
+input[type="text"]:focus {
+    border-color: var(--primary);
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+#addBtn {
+    background-color: var(--primary);
+    color: white;
+    padding: 10px 15px;
+}
+
+.filters {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.filter-btn {
+    background: #eee;
+    padding: 5px 10px;
+    font-size: 0.8rem;
+}
+
+.filter-btn.active {
+    background: var(--primary);
+    color: white;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background: #fff;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 5px;
+}
+
+.completed-text {
+    text-decoration: line-through;
+    color: #888;
+}
+
+#clearCompleted {
+    width: 100%;
+    margin-top: 20px;
+    background: var(--danger);
+    color: white;
+    padding: 8px;
+}
+
+.task-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+
+.delete-btn {
+    background: none;
+    color: var(--danger);
+    font-weight: bold;
+    font-size: 1.2rem;
+}
