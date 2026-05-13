@@ -1,0 +1,20 @@
+/* This forces the browser to allow centering */
+:root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center; /* This centers the card */
+  justify-content: center;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #f8fafc; /* Neo background */
+}
+
+#root {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}

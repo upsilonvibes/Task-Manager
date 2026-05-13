@@ -1,58 +1,74 @@
 # Gestor de Tareas (Task Manager)
 
-A functional, responsive Task Manager built with vanilla web technologies. This project focuses on **State Management**, **DOM Manipulation**, and **Data Persistence** using the browser's LocalStorage.
+A modern, functional Task Manager refactored from vanilla JS to React + Vite. This project focuses on Component-based Architecture, Hooks (useState, useEffect), and Neo-Minimalist UI design.
 
 ## 🚀 Features
 
-- **CRUD Operations**: Create, Read, Update, and Delete tasks.
-- **Persistence**: Tasks are saved to `localStorage`, so they remain even after refreshing the page.
-- **Task Filtering**: View "All" tasks, only "Pending" tasks, or only "Completed" tasks.
-- **Bulk Actions**: A "Clear Completed" button to quickly remove finished items.
-- **Responsive Design**: Styled with a custom sea-foam green palette (`#78e6c1`) and optimized for various screen sizes.
+ - **React State Management:** Centralized task handling using useState.
+
+ - **Side Effects & Persistence:** Integrated useEffect to synchronize task data with localStorage for persistent sessions.
+
+ - **Dynamic Filtering:** Seamlessly toggle between "All", "Pending", and "Completed" views using array manipulation.
+
+ - **Neo-Minimalist UI:** Refined aesthetic with a focus on high contrast, soft shadows, and reduced visual glare.
+
+ - **Responsive Layout:** Optimized for mobile and desktop using CSS Flexbox..
 
 ## 🛠️ Built With
 
-- **HTML5**: Semantic structure for accessibility.
-- **CSS3**: Custom properties (variables) and Flexbox layout.
-- **JavaScript (ES6)**: Logic for state management, event listeners, and array filtering.
+ - **React 18:** Frontend library for building the user interface.
+
+ - **Vite:** Ultra-fast frontend build tool and development server.
+
+ - **CSS3:** Custom variables and Neo-Minimalist styling.
+
+ - **JavaScript (ES6+):** Functional programming patterns and asynchronous logic.
 
 ## 📁 Project Structure
 
 ```text
 /task-manager
-  ├── index.html       # Application structure
-  ├── styles.css       # Visual styling and layout
-  ├── script.js        # Core logic and storage management
+  ├── public/          # Static assets
+  ├── src/
+  │   ├── App.jsx      # Core logic, hooks, and component structure
+  │   ├── App.css      # Neo-Minimalist styles and layout
+  │   ├── main.jsx     # Entry point for React mounting
+  │   └── index.css    # Global resets and centering
+  ├── index.html       # Single Page Application template
   └── README.md        # Project documentation
   ```
 ## 🧠 JavaScript Concepts Applied
-**State Management**
-The app uses an array of objects to track the "state" of your tasks. When you check a box or delete an item, the array updates first, and then the screen "re-renders" to match the data.
+**Hooks (useState & useEffect)**
+Managed application state without classes. useEffect acts as the bridge between the React lifecycle and the browser's localStorage API.
 
-**LocalStorage**
-To prevent data loss on refresh, the script uses:
+**Declarative Rendering**
+Instead of manual DOM manipulation (like appendChild), the UI automatically updates based on the current state of the tasks array.
 
-JSON.stringify(): To turn the task list into a string for saving.
-
-JSON.parse(): To turn that string back into a list when the page loads.
-
-**Array Filtering**
-The "Clear Completed" button uses the .filter() method to create a new list containing only the tasks that aren't finished yet.
+**Conditional Styling**
+Leveraged JavaScript template literals to dynamically apply CSS classes (like .active for filters and .completed-text for tasks).
 
 ## 📖 How to Use
-1. Clone the repository:
+1. **Clone the repository:**
 
 
 bash
-git clone [https://github.com/percysmartanecdote168-droid/Task-Manager.git](https://github.com/percysmartanecdote168-droid/Task-Manager.git)
+git clone [https://github.com/upsilon-vibes/Task-Manager.git](https://github.com/upsilonvibes/Task-Manager.git)
 
-2. Open index.html in any modern web browser.
+2. **Install dependencies:**
+bash
+npm install
 
-3. Add your daily goals and stay organized!
+3. **Run the development server:**
+bash
+npm run dev
+
+4. **Build for production:**
+bash
+npm run build
 
 ## 📜 Philosophy
 "Paso a paso se llega lejos." (Step by step, one goes far.)
 
-© April 2026 | Developed by percysmartanecdote168-droid
+© May 2026 | Developed by upsilonvibes
 
 
